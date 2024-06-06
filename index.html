@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAILWAY RESERVATION SYSTEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/railway-background.jpg'); /* Replace with a real image URL */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent dark blue */
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .nav-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 15px;
+            margin: 20px;
+        }
+        h1 {
+            color: darkred;
+            margin-bottom: 20px;
+        }
+        .animated-text { 
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 12s steps(70, end) forwards, blink-caret 0.75s step-end infinite;
+            text-align: center;
+            display: inline-block;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 75ch; } /* Adjust width to cover the entire text */
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+        .description {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgba(0, 51, 102, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav><!--for navbar-->
+        <div class="nav-title">RAILWAY RESERVATION SYSTEM</div>
+        <div>
+            <a href="new_user_form.html">New User</a>
+            <a href="enquiry.php">Enquiry and Ticket Booking</a>
+            <a href="user_login.html">Ticket History OR Cancellation</a>
+            <a href="admin_login.html">Admin Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <div class="animated-text">Welcome to the Indian Railway Reservation System, serving millions of passengers daily.</div>
+        <div class="description">
+            Our system allows you to book tickets, check your ticket history, and manage your reservations with ease. Whether you are a new user or an admin, our platform provides all the functionalities you need to ensure a smooth and hassle-free journey.
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Railway Reservation System. All rights reserved.
+    </footer>
+</body>
+</html>
